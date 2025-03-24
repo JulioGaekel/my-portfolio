@@ -12,7 +12,7 @@ const Home = () => {
                 Moin, I'm Julio
             </motion.h1>
             <motion.p
-                className="text-xl mb-6"
+                className="text-xl mb-6 px-4"
                 initial={{ opacity: 0 }}
                 animate={{opacity: 1 }}
                 transition={{ delay: 1, duration: 1}}
