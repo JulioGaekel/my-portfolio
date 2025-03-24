@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -48,14 +49,22 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Nav */}
+            <AnimatePresence>
             {isOpen && (
-                <ul className="md:hidden px-4 pb-4 space-y-2 font-medium bg-gray-800 text-right">
+                <motion.ul
+                    key="mobile-menu"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="md:hidden px-4 pb-4 space-y-2 font-medium bg-gray-800 text-right overflow-hidden">
                     <li><Link to="/" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>Home</Link></li>
                     <li><Link to="/projects" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>Projects</Link></li>
                     <li><Link to="/about" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>About</Link></li>
                     <li><Link to="/contact" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>Contact</Link></li>
-                </ul>
+                </motion.ul>
             )}
+            </AnimatePresence>
         </nav>
     )
 }
