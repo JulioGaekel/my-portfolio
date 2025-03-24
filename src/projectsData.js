@@ -9,7 +9,7 @@ const projects = [
     },
     {
         id: 2,
-        title: "PROJECT NAME",
+        title: "Calculator",
         description: "PROJECT DESCRIPTION.",
         techStack: ["TECH1", "TECH2", "TECH3"],
         github: "https://github.com/juliogaekel/PROJECT-NAME",
@@ -17,6 +17,14 @@ const projects = [
     },
     {
         id: 3,
+        title: "Web Scraper",
+        description: "PROJECT DESCRIPTION.",
+        techStack: ["TECH1", "TECH2", "TECH3"],
+        github: "https://github.com/juliogaekel/PROJECT-NAME",
+        live: "PLACEHOLDER.COM",
+    },
+    {
+        id: 4,
         title: "PROJECT NAME",
         description: "PROJECT DESCRIPTION.",
         techStack: ["TECH1", "TECH2", "TECH3"],
