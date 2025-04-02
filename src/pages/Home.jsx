@@ -9,7 +9,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0}}
             transition={{ duration:1}}
             >
-                Moin, I'm Julio
+                Hi, I'm Julio
             </motion.h1>
             <motion.p
                 className="text-xl mb-6 px-4"
@@ -25,6 +25,9 @@ const Home = () => {
             >
                 View My Work
             </a>
+            <p className="mt-4 text-sm text-gray-100 italic">
+  🚧 You’re viewing a live build of my portfolio — updates and new projects are on the way!
+</p>
         </div>
     );
 };
