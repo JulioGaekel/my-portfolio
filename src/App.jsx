@@ -11,6 +11,10 @@ function App() {
         <Router>
             <div className="w-screen min-h-screen flex flex-col bg-gray-100 text-gray-900">
                 <Navbar />
+                <div className="bg-yellow-200 text-yellow-900 text-center py-2 px-4 text-sm font-medium">
+  🚧 This portfolio is a work in progress! New content and features coming soon.
+</div>
+
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
