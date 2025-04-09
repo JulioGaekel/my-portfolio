@@ -5,9 +5,12 @@ const Contact = () => {
                 <h2 className="text-4xl font-bold text-gray-800 mb-6">Contact Me</h2>
             </div>
             <form
-                action="https://formspree.io/f/your_form_id"
+                action="https://formspree.io/f/xdkeykke"
                 method="POST"
-                className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg">
+                className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg"
+            >
+                    <input type="hidden" name="_captcha" value="false" />
+
                     <label className="block text-gray-600 font-medium ">Your name</label>
                     <input type="text" name="name" className="w-full border p-2 rounded mt-1 mb-4 bg-white text-black" required />
 
