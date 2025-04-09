@@ -10,6 +10,7 @@ const Contact = () => {
                 className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg"
             >
                     <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_subject" value="New message from portfolio!" />
 
                     <label className="block text-gray-600 font-medium ">Your name</label>
                     <input type="text" name="name" className="w-full border p-2 rounded mt-1 mb-4 bg-white text-black" required />
