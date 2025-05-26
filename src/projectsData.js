@@ -31,6 +31,10 @@ const projects = [
         github: "https://github.com/juliogaekel/PROJECT-NAME",
         live: "PLACEHOLDER.COM",
     },
+    {
+        id: 5;
+        title: "REST API"
+    },
 ];
 
 export default projects;
