@@ -18,7 +18,6 @@ const Projects = () => {
                         </div>
                         <div className="mt-4">
                             <a href={project.github} target="_blank" className="text-blue-500 hover:underline mr-4">GitHub</a>
-                            <a href={project.live} target="_blank" className="text-green-500 hover:underline">Live Demo</a>
                         </div>
                     </div>
                 ))}
