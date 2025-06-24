@@ -1,11 +1,10 @@
 const projects = [
     {
         id: 1,
-        title: "Image Compressor",
-        description: "Simple Python tool to compress images easily",
+        title: "Image File Size Compressor",
+        description: "Lightweight Python tool to compress images easily using GUI",
         techStack: ["Python", "Tkinter"],
         github: "https://github.com/JulioGaekel/image-compressor",
-        live: "PLACEHOLDER.COM",
     },
     // {
     //     id: 2,
